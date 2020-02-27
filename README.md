@@ -57,23 +57,42 @@ Author : Baptiste Hardrick & David Jaquet
 
 - Below is our Drupal page :
 
-  
+  ![drupal](assets/drupal.png)
 
-- The Elastic IP Address is `asd`
+- The Elastic IP Address is `54.210.173.133`
 
 -  Why is it a good idea to create an Elastic IP Address for a web site (our web application)? Why is it not sufficient to hand out as URL for the web site the public DNS name of the instance? 
 
-## Task 4: Create an additional EBS volume and use snapshots
+## Create an additional EBS volume and use snapshots
 
-## Task 5: Performance analysis of our instance (optional)
+- Here is the Availability Zone of our Instance and Volume :
+- After formatting and mounting, we have `XX` of space availabe
 
+## Performance analysis of our instance (optional)
 
+- The URL of the Geekbench results for the EC2 instance and our local machine can be find here
 
-## Task 6: Resource consumption an pricing
+- Here is some information about the EC2 instance
 
+  | Performances score | overall | integer | floating-point | memory |
+  | ------------------ | ------- | ------- | -------------- | ------ |
+  | Single-core        |         |         |                |        |
+  | Multi-core         |         |         |                |        |
 
+- Here is some informations about our local machine
 
-## Task 7: Cleanup
+  | Performances score | overall | integer | floating-point | memory |
+  | ------------------ | ------- | ------- | -------------- | ------ |
+  | Single-core        |         |         |                |        |
+  | Multi-core         |         |         |                |        |
 
+- Comparison of the machines
 
+## Resource consumption an pricing
+
+- How much does your instance (including disk) cost per hour? What was its cost for this lab?
+  - Response
+- If the instance runs continously during the whole month, the total cost will be **sfdsfsd**
+- If you buy a 1 TB SSD disk at Digitec it currently costs CHF 289. How much does a 1 TB ESB Volume cost for a month?
+  - Response
 
