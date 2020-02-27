@@ -49,25 +49,21 @@ Author : Baptiste Hardrick & David Jaquet
 
   ![ping](assets/ifconfig.png)
 
+  The pinged address was `54.224.211.186`, but the address of the virtual machine is `172.31.47.190`. The first address is the address of the DNS server where our VM is located. The `NAT` will know that we want to access to our machine at the address `172.31.47.190` with its translation table.
+  
+  The IP address obtained with the `ifconfig` command is the effective IPv4 address of the virtual machine.
+
+## Install a web application
+
+- Below is our Drupal page :
+
   
 
+- The Elastic IP Address is `asd`
 
-
-## Task 3: Install a web application
-
-
-
-### Download and install Drupal
-
-
-
-### Set up Drupal
-
-
+-  Why is it a good idea to create an Elastic IP Address for a web site (our web application)? Why is it not sufficient to hand out as URL for the web site the public DNS name of the instance? 
 
 ## Task 4: Create an additional EBS volume and use snapshots
-
-
 
 ## Task 5: Performance analysis of our instance (optional)
 
