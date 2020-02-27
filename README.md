@@ -19,7 +19,7 @@ Author : Baptiste Hardrick & David Jaquet
 
 - From the **EC2 Management Console** copy the **public DNS** name of the instance into the report.
 
-  - The **public DNS** name is `ec2-34-207-106-123.compute-1.amazonaws.com`
+  - The **public DNS** name is `ec2-54-224-211-186.compute-1.amazonaws.com`
 
 - Once you have successfully logged into your EC2 instance, run the `hostname` and `uname -a` commands and paste their outputs into the report.
 
@@ -47,7 +47,7 @@ Author : Baptiste Hardrick & David Jaquet
 
 - Determine the IP address seen by the operating system in the EC2 instance by running the `ifconfig` command. What type of address is it? Compare it to the address displayed by the ping command earlier. How do you explain that you can successfully communicate with the machine?
 
-  - 
+  ![ping](assets/ifconfig.png)
 
   
 
