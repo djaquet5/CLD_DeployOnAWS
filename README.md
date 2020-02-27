@@ -43,7 +43,7 @@ Author : Baptiste Hardrick & David Jaquet
 
   - Here is the result of `ping` command
 
-    ![ping](assets/ping.jpeg)
+    ![ping](assets/ping.JPG)
 
 - Determine the IP address seen by the operating system in the EC2 instance by running the `ifconfig` command. What type of address is it? Compare it to the address displayed by the ping command earlier. How do you explain that you can successfully communicate with the machine?
 
