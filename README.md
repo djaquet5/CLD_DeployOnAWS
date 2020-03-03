@@ -59,7 +59,7 @@ Author : Baptiste Hardrick & David Jaquet
 
   ![drupal](assets/drupal.png)
 
-- The Elastic IP Address is `54.210.173.133`
+- The Elastic IP Address is `52.20.121.59`
 
 - Why is it a good idea to create an Elastic IP Address for a web site (our web application)? Why is it not sufficient to hand out as URL for the web site the public DNS name of the instance? 
 
