@@ -61,12 +61,40 @@ Author : Baptiste Hardrick & David Jaquet
 
 - The Elastic IP Address is `54.210.173.133`
 
--  Why is it a good idea to create an Elastic IP Address for a web site (our web application)? Why is it not sufficient to hand out as URL for the web site the public DNS name of the instance? 
+- Why is it a good idea to create an Elastic IP Address for a web site (our web application)? Why is it not sufficient to hand out as URL for the web site the public DNS name of the instance? 
 
-## Create an additional EBS volume and use snapshots
+  - It is a good idea to create an Elastic IP Address because it works like a **static** IPv4 address. Which means, it doesn't change, unlike the DNS address of the instance which changes each time we restart it.
+    It is not sufficient to hand out the public DNS name because it's not permanent.
 
-- Here is the Availability Zone of our Instance and Volume :
-- After formatting and mounting, we have `XX` of space availabe
+## Create an additional EBS Volume and use Snapshots
+
+-  What is the size of the EBS Volume? 
+
+  - The size of our EBS Volume is `8 Gio`.
+
+    ![EBS Size](assets/EBSSize.png)
+
+-  What capacity does the operating system see and how much space is left? 
+
+  - We can see in the screen below that the operating system can see a size `7.7 G`, but only `2.2 G` is used. There is still `5.6 G` of space available.
+
+  ![df-h](assets/df.jpg)
+
+- Our Instance is available in the zone `us-east-1a` :
+
+  ![Availability Zone](assets/AvailableZone.png)
+
+-  Copy the Availability Zone of your Instance and Volume into the report. 
+
+  - Here is the Availability Zone of our Instance and Volume. Note that we use each of our last name to differentiate each of our test volume easily.
+
+    ![Availability Zone](assets/AvailabilityZone2.png)
+
+- Copy the available space after formatting and mounting into the report.
+
+  - After formatting and mounting, we still have `2.2 G` of space available
+
+    ![Disk mounted](assets/disksMounted.png)
 
 ## Performance analysis of our instance (optional)
 
