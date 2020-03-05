@@ -6,12 +6,10 @@ Author : Baptiste Hardrick & David Jaquet
 
 - What is the smallest and the biggest instance type (in terms of virtual CPUs and memory) that you can choose from when creating an instance?
 
-- |          | Instance type | Virtual CPUs | Memory   |
-  | -------- | ------------- | ------------ | -------- |
-  | Smallest | t2.nano       | 1            | 0.5 Gio  |
-  | Biggest  | x1e.32xlarge  | 128          | 3904 Gio |
-
-  
+    |          | Instance type | Virtual CPUs | Memory   |
+    | -------- | ------------- | ------------ | -------- |
+    | Smallest | t2.nano       | 1            | 0.5 Gio  |
+    | Biggest  | x1e.32xlarge  | 128          | 3904 Gio |
 
 - How long did it take for the new instance to get into the *running* state?
 
@@ -32,8 +30,6 @@ Author : Baptiste Hardrick & David Jaquet
     $ uname -a
     Linux ip-172-31-47-190 4.15.0-1057-aws #59-Ubuntu SMP Wed Dec 4 10:02:00 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux
     ```
-
-    
 
 - Try to ping the instance from your local machine. What do you see? Explain. Change the configuration to make it work. Ping the instance, record 5 round-trip times.
 
@@ -98,29 +94,62 @@ Author : Baptiste Hardrick & David Jaquet
 
 ## Performance analysis of our instance (optional)
 
-- The URL of the Geekbench results for the EC2 instance and our local machine can be find here
+- Provide the URLs of the Geekbench results for the EC2 instance and your local machine. 
 
-- Here is some information about the EC2 instance
+  - Here is the link to the Geekbench results for our [instance](http://browser.primatelabs.com/geekbench3/8849285) and our [local machine](http://browser.primatelabs.com/geekbench3/8849287).
 
-  | Performances score | overall | integer | floating-point | memory |
-  | ------------------ | ------- | ------- | -------------- | ------ |
-  | Single-core        |         |         |                |        |
-  | Multi-core         |         |         |                |        |
+- Provide system information about the EC2 instance.
 
-- Here is some informations about our local machine
+  - Below, the system information about our EC2 instance :
 
-  | Performances score | overall | integer | floating-point | memory |
-  | ------------------ | ------- | ------- | -------------- | ------ |
-  | Single-core        |         |         |                |        |
-  | Multi-core         |         |         |                |        |
+    ![System Information](assets/SystemInformationEC2.jpg)
 
-- Comparison of the machines
+- Provide the single-core and multi-core performance scores for overall, integer, floating-point and memory performance of the EC2 instance.
+
+  - Here is an array with the single-core and mutli-core performance scores of the EC2 instance :
+
+    | Core        | Integer | Floating Point | Memory | Overall |
+    | ----------- | ------- | -------------- | ------ | ------- |
+    | Single-core | 2672    | 2576           | 2863   | 2671    |
+    | Multi-core  | 2655    | 2572           | 2878   | 2666    |
+
+- Provide system information about your local machine.
+
+  - Below, the system information about our local machine :
+
+    ![System Information](assets/SystemInformationLM.jpg)
+
+-  Provide the single-core and multi-core performance scores for overall, integer, floating-point and memory performance of your local machine. 
+
+  - Here is an array with the single-core and mutli-core performance scores of our local machine :
+
+    | Core        | Integer | Floating Point | Memory | Overall |
+    | ----------- | ------- | -------------- | ------ | ------- |
+    | Single-core | 4023    | 3856           | 4033   | 3958    |
+    | Multi-core  | 3987    | 3921           | 4066   | 3976    |
+
+- Compare the overall scores of the two machines.
+
+-  # TODO => VM Ubuntu 19.10 est mieux bien
 
 ## Resource consumption an pricing
 
 - How much does your instance (including disk) cost per hour? What was its cost for this lab?
-  - Response
-- If the instance runs continously during the whole month, the total cost will be **sfdsfsd**
-- If you buy a 1 TB SSD disk at Digitec it currently costs CHF 289. How much does a 1 TB ESB Volume cost for a month?
-  - Response
+  
+  - The cost of an `t2.micro` is **0.0116 per hour**. We estimate that our instance had a running time of **3 hours per week**. So our instance operated for **6 hours in total** and we spent **$ 0.0696** for it.
+  
+- Change the parameters to an instance that runs continuously during the whole month. Note the total cost.
 
+  - If the instance runs continuously during the whole month, the total cost will be **$ 8.5**.
+
+    ![Estimate cost](assets/AWSCalc1.jpg)
+
+    ![Estimate cost](assets/AWSCalc2.jpg)
+
+- If you buy a 1 TB SSD disk at Digitec it currently costs CHF 289. How much does a 1 TB ESB Volume cost for a month?
+  
+  - In this case, Amazon Web Service will be cheaper. It costs **$110.90**.
+  
+    ![Cost for 1 TB](assets/AWSCalc1TB1.jpg)
+  
+    ![Cost for 1 TB](assets/AWSCalc1TB2.jpg)
